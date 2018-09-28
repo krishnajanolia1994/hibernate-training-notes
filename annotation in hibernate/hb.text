@@ -1,0 +1,29 @@
+@Entity Annotation:------ we used the @Entity annotation to the Employee class, which marks this class as an entity bean;
+                        Entity Bean" is a type of Enterprise JavaBean, a server-side Java EE component,
+                         that represents persistent data maintained in a database
+                         
+ @Table Annotation:-------The @Table annotation allows you to specify the details of the table that will be used to persist
+                          the entity in the database.The @Table annotation provides four attributes, allowing you to override
+                          the name of the table, its catalogue, and its schema, and enforce unique constraints on columns 
+                          in the table.For now, we are using just table name, which is EMPLOYEE.
+                          
+ @Id and @GeneratedValue Annotations:---Each entity bean will have a primary key, which you annotate on the class with the
+                                          @Id annotation. 
+                                         The primary key can be a single field or a combination of multiple fields depending
+                                         on your table structure.
+                                         
+@Column Annotation
+The @Column annotation is used to specify the details of the column to which a field or property will be mapped. 
+You can use column annotation with the following most commonly used attributes −
+
+    name attribute permits the name of the column to be explicitly specified.
+
+    length attribute permits the size of the column used to map a value particularly for a String value.
+
+    nullable attribute permits the column to be marked NOT NULL when the schema is generated.
+
+    unique attribute permits the column to be marked as containing only unique values.
+
+
+
+
